@@ -20,4 +20,4 @@ lein run
     * fractal.core for -main function
     * fractal.mandelbrot for mandelbrot fractals
     * fractal.barnsley for Barnsley's fern ([source](http://nakkaya.com/2009/09/28/fractals-in-clojure-fractal-fern/))
-    * extrapolate to [other fractals](http://en.wikipedia.org/wiki/Fractal)
+    * extrapolate to [other fractals](http://nakkaya.com/tags/#fractal)
