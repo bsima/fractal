@@ -17,3 +17,7 @@ lein run
 * make the time-fractal work
 * make a ClojureScript version (using math.js and D3.js)
 * break up the functions into an actual library
+    * fractal.core for -main function
+    * fractal.mandelbrot for mandelbrot fractals
+    * fractal.barnsley for Barnsley's fern ([source](http://nakkaya.com/2009/09/28/fractals-in-clojure-fractal-fern/))
+    * extrapolate to [other fractals](http://en.wikipedia.org/wiki/Fractal)
