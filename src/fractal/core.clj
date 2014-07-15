@@ -1,5 +1,4 @@
 (ns fractal.core
-  (:refer-clojure :exclude [+ * < min])
   (:require [clj-time.core :as t]
             [clj-time.local :as l])
   (:gen-class)
@@ -55,6 +54,7 @@
           iterations (calc-iterations p q max-iterations)
           color (calc-pixel-color iterations max-iterations)]
       (.setColor graphics color)
+
       (.drawLine graphics i j i j))))
 
 
