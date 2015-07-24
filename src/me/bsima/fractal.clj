@@ -1,4 +1,4 @@
-(ns fractal.core
+(ns me.bsima.fractal
   (:require [clj-time.core  :as t]
             [clj-time.local :as l]
             [quil.core      :as q])
@@ -15,10 +15,8 @@
 
 (defprotocol IFractal
   "A specification for drawing fractals."
-  (setup  [] "Lays the groundwork for the generated fractal. Is only called once.")
-  (draw   [] "Called immediately after setup has finished, and then repeatedly until stopped.")
-  (sketch [] "FIXME"))
+  (setup  [_] "Lays the groundwork for the generated fractal. Is only called once.")
+  (draw   [_] "Called immediately after setup has finished, and then repeatedly until stopped.")
+  (sketch [_] "FIXME"))
 
 
-(defn draw [& args] 
-  (m/draw -2.1 -1.5 3.0 3.1 100 510 510))

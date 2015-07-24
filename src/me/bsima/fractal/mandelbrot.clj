@@ -1,4 +1,4 @@
-(ns fractal.mandelbrot
+(ns me.bsima.fractal.mandelbrot
   (:import (javax.swing JFrame JLabel)
            (java.awt.image BufferedImage)
            (java.awt Dimension Color)

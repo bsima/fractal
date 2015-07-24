@@ -1,4 +1,4 @@
-(ns fractal.barnsley
+(ns me.bsima.fractal.barnsley
   (:import (javax.swing JFrame JLabel)
            (java.awt.image BufferedImage)
            (java.awt Dimension Color)))

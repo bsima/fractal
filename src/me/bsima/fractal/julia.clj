@@ -38,7 +38,31 @@
   "Maps iteration-count (0-10) to a color."
   (color (+ 15 (* 8 v)) 70 70))
 
-(defrecord Julia
+(defn setup []
+  (frame-rate 50)
+  (color-mode :hsb 100))
+
+(defn draw []
+  (time
+   (let [w (width)
+         h (height)
+         c (pt-to-plane (mouse-x) (mouse-y) w h)
+         iteration-fn (ifn c 5)
+         pixels (pixels)]
+     (doseq [x (range w)
+             y (range h)]
+       (let [v (count-iterations 10 4 (pt-to-plane x y w h) iteration-fn)]
+         (aset-int pixels (+ x (* y w)) (rgb-of v))))
+     (update-pixels))))
+
+(defsketch Julia
+  :title "Julia"
+  :setup setup
+  :draw draw
+  :renderer :p2d
+  :size [480 48])
+
+#_(defrecord Julia
     []
   
   IFractal
@@ -62,5 +86,5 @@
     :setup (:setup this)
     :draw (:draw this)
     :renderer :p2d
-    :size [480 48]0))
+    :size [480 48]))
 
