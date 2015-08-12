@@ -1,9 +1,9 @@
-(ns me.bsima.fractal.barnsley
+(ns fractal.barnsley
   (:import (javax.swing JFrame JLabel)
            (java.awt.image BufferedImage)
            (java.awt Dimension Color)))
 
-;; @nakkay's algorithm:
+;; @nakkaya's algorithm:
 ;;
 ;; 1. Start at a point, x=0 y=1 in this case
 ;; 2. Paint that point on the canvas

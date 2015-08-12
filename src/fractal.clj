@@ -1,9 +1,9 @@
-(ns me.bsima.fractal
+(ns fractal
   (:require [clj-time.core  :as t]
             [clj-time.local :as l]
             [quil.core      :as q])
 
-  ;; TODO: remove java deps
+  ;; TODO: remove java deps, instead rely on quil
   (:import (javax.swing JFrame JLabel)
            (java.awt.image BufferedImage)
            (java.awt Dimension Color)
@@ -17,6 +17,6 @@
   "A specification for drawing fractals."
   (setup  [_] "Lays the groundwork for the generated fractal. Is only called once.")
   (draw   [_] "Called immediately after setup has finished, and then repeatedly until stopped.")
-  (sketch [_] "FIXME"))
+  (sketch [_] "Sketches the actual fractal"))
 
 

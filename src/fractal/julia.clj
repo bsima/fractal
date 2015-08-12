@@ -1,4 +1,4 @@
-(ns me.bsima.fractal.julia
+(ns fractal.julia
   (:use [quil.core]))
 
 ;; http://stackoverflow.com/questions/11824815/fast-complex-number-arithmetic-in-clojure
@@ -60,7 +60,7 @@
   :setup setup
   :draw draw
   :renderer :p2d
-  :size [480 48])
+  :size [480 480])
 
 #_(defrecord Julia
     []

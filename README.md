@@ -14,7 +14,6 @@ lein run
 
 ## To do
 
-* make the time-fractal work
 * make a ClojureScript version (using math.js and D3.js)
 * break up the functions into an actual library
     * fractal.core for -main function

@@ -5,7 +5,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojars.nakkaya/commons-math "2.1"]
-                 [clj-time "0.7.0"]]
+                 [clj-time "0.7.0"]
+                 [quil "2.2.6"]]
   :main ^:skip-aot fractal.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
