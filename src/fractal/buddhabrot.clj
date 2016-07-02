@@ -94,4 +94,5 @@
       (.setSize (Dimension. size size))
       (.show))))
 
-(def fractal {:buffer (make-array Integer/TYPE 800 800) :size 800 :iteration 50})
+(defn fractal []
+  {:buffer (make-array Integer/TYPE 800 800) :size 800 :iteration 50})

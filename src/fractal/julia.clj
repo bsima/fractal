@@ -55,7 +55,7 @@
          (aset-int pixels (+ x (* y w)) (rgb-of v))))
      (update-pixels))))
 
-(defsketch Julia
+#_(defsketch Julia
   :title "Julia"
   :setup setup
   :draw draw

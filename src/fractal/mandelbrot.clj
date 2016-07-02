@@ -19,7 +19,6 @@
 
 
 (defn calc-iterations
-  "docstring here"
   [p q max-iterations]
   (let [c (Complex. p q)]
     (loop [z c
@@ -33,7 +32,6 @@
 
 
 (defn calc-pixel-color
-  "doc"
   [iterations max-iterations]
   (if (or (< iterations 10)
           (= iterations max-iterations))
@@ -45,7 +43,6 @@
       (Color. r g b))))
 
 (defn generate
-  "docs"
   [x y width height max-iterations graphics surface-width surface-height]
   (doseq [i (range surface-width)
           j (range surface-height)]
